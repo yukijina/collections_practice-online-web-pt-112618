@@ -25,7 +25,19 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array.each do |name|
-    name
+  array.map do |name|
+    temp = name.split("")
+    temp[2] = "$"
+    temp.join("")
   end
+end
+
+def find_a(array)
+  array.select do |name|
+    name.start_with?("a")
+  end
+end
+
+def sum_array(array)
+  array.inject {|sum, num| sum += num }
 end
