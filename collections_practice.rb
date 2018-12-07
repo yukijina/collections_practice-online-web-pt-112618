@@ -4,7 +4,7 @@ def sort_array_asc(array)
 end
 
 def sort_array_desc(array)
-  array.reverse
+  array.sort.reverse
   #array.sort {|a,b| b <=> a }
 end
 
@@ -55,4 +55,5 @@ def add_s(array)
     else
       word  
     end
+  end
 end
