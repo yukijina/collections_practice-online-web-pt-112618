@@ -29,6 +29,7 @@ def kesha_maker(array)
     temp = name.split("")
     temp[2] = "$"
     temp.join("")
+<<<<<<< HEAD
   end
 end
 
@@ -49,5 +50,17 @@ def add_s(array)
     else
       word + "s"  
     end
+=======
+>>>>>>> 2900f4ee9e7d1b24a9fd4e1d74cbf9a25b3da6c8
   end
+end
+
+def find_a(array)
+  array.select do |name|
+    name.start_with?("a")
+  end
+end
+
+def sum_array(array)
+  array.inject {|sum, num| sum += num }
 end
