@@ -48,6 +48,11 @@ def sum_array(array)
   array.inject {|sum, num| sum += num }
 end
 
+#another way sor sum_array 
+# def sum_array(array)
+#   array.reduce(:+)
+# end
+
 def add_s(array)
   array.map.each_with_index do |word, index|
     if index != 1
@@ -57,3 +62,10 @@ def add_s(array)
     end
   end
 end
+
+#advanced bonus
+def swap_elements_from_to(array, index1, index2)
+  array[index1], array[index2] = array[index2], array[index1]
+  array
+end  
+
